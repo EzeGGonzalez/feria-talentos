@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import Hero from '~/components/home/Hero.vue'
+import Hero from '~/components/common/Hero.vue'
 import Terms from '~/components/jobs/Terms.vue'
 import JobForm from '~/components/jobs/Form.vue'
 

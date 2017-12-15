@@ -41,6 +41,8 @@
 </script>
 
 <style lang="sass" scoped>
+@import "~assets/colors";
+
 .coder-profile-links
   a
     color: inherit
@@ -48,7 +50,7 @@
     align-content: center
 
     span:nth-child(2)
-      border-bottom: 1px solid $primary
+      border-bottom: 1px solid $primary;
       padding-bottom: 0.25rem
 
     .icon

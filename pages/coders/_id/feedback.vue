@@ -51,7 +51,7 @@
 </template>
 
 <script>
-import Hero from '~/components/home/Hero.vue'
+import Hero from '~/components/common/Hero.vue'
 
 export default {
   async asyncData ({ params, app }) {
