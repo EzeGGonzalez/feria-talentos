@@ -1,0 +1,78 @@
+@import "colors";
+
+$family-primary: 'Open Sans', sans-serif;
+
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+// Set your colors
+$primary-invert: findColorInvert($primary);
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+  "white": ($white, $black),
+  "black": ($black, $white),
+  "light": ($light, $light-invert),
+  "dark": ($dark, $dark-invert),
+  "primary": ($primary, $primary-invert),
+  "info": ($info, $info-invert),
+  "success": ($success, $success-invert),
+  "warning": ($warning, $warning-invert),
+  "danger": ($danger, $danger-invert)
+);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+
+@import "colors";
+@import "base";
+@import "shadows";
+@import "spacing";
+@import "navbar";
+
+.main-hero {
+  padding-top: 5rem;
+
+  background-size: cover;
+  background-position: center;
+
+  -webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+
+  position: relative;
+
+  text-shadow: 0 1px 4px rgba(0,0,0,.5);
+
+  &.shadowy {
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+
+      background-color: black;
+      opacity: 0.6;
+    }
+  }
+
+  .companies-wrapper {
+    margin-top: 1.5rem;
+  }
+  .companies-logos {
+    margin-top: 0.5rem;
+    display: flex;
+    align-content: center;
+    img {
+      height: 15px;
+      margin-right: 1rem;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+a.navbar-item:hover,
+a.navbar-item.is-active,
+.navbar-link:hover,
+.navbar-link.is-active {
+    background-color: transparent;
+    color: $primary;
+}
+
+.has-tint {
+    color: $primary;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+hr:not(.plain) {
+  width: 50px;
+  height: 3px;
+  margin: 1.8rem auto;
+  border-width: 2px;
+  border-color: $primary;
+  background-color: $primary;
+}
+
+.section.is-alternative {
+  background-color: #F7F7F7;
+}
+
+.section.is-dark-grey {
+  background-color: #f1f1f1;
+}
+
+.section.is-primary {
+  background-color: $primary;
+}
+
+.section.is-light-primary {
+  background-color: $primary-light;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+#inscription .section {
+  @extend .is-medium;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.ada-text {
+  color: $primary;
+  font-weight: 700;
+}
+
+.ada-color {
+  color: $primary;
+}
+
+img.grey {
+  filter: gray;
+  filter: grayscale(1);
+}
+
+.columns.is-vcentered {
+  align-items: center;
+}
+
+.is-500 {
+  font-weight: 500;
+}
+
+.is-600 {
+  font-weight: 600;
+}
+
+.is-900 {
+  font-weight: 900;
+}
